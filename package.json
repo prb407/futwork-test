@@ -1,0 +1,31 @@
+{
+	"name": "futwork-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "node .build/local.js",
+		"start": "tsc-watch --onSuccess \"npm run server -- --mode=http\" --onFailure \"echo ERROR! Compilation Failed\"",
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "Pritesh Bhanderi",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"csvtojson": "^2.0.10",
+		"express": "^4.17.1",
+		"multer": "^1.4.4"
+	},
+	"devDependencies": {
+		"@types/body-parser": "^1.17.1",
+		"@types/express": "^4.17.2",
+		"@types/multer": "^1.4.7",
+		"@types/node": "^13.1.6",
+		"prettier": "^2.1.2",
+		"pretty-quick": "^3.1.0",
+		"tsc-watch": "^1.1.37",
+		"tslint": "^5.20.1",
+		"typescript": "^3.7.4"
+	}
+}
